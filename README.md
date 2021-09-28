@@ -14,6 +14,6 @@ Tugas Chapter 7 - Game Programming, remake game Survival Shooter.
 -Spawn rate musuh meningkat sepanjang game
 
 ### More
--File .exe terdapat dalam file "Apk.zip"
+-File Build on RELEASE
 
 -Kasih bintang ya :D
