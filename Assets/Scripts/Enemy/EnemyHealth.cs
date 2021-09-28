@@ -82,19 +82,19 @@ public class EnemyHealth : MonoBehaviour
     void BuffPlayer()
     {
         float random = Random.value;
-        if (random > 0.75) //rate 25%
-        {
-            Debug.Log("Attack player meningkat sebesar 20 dan recoil nya mengecil");
-            PlayerShooting.Instance.IncreaseShooting(20, 0.01f);
-        }
-        if (random > 0.9) //rate 10%
-        {
-            PlayerHealth.Instance.AddHealth(5);
-        }
-        if(random > 0.95) //rate 5%
+        if (random > 0.95) //rate 5%
         {
             Debug.Log("Kecepatan player bertambah sebanyak 1");
             PlayerMovement.Instance.AddSpeed(1);
         }
+        else if (random > 0.8) //rate 20%
+        {
+            PlayerHealth.Instance.AddHealth(5);
+        }
+        else if (random > 0.75) //rate 25%
+        {
+            Debug.Log("Attack player meningkat sebesar 20 dan recoil nya mengecil");
+            PlayerShooting.Instance.IncreaseShooting(20, 0.01f);
+        }    
     }
 }
